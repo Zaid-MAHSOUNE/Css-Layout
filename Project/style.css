@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    background-image: url(img/bc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+}
+
+.menu-item {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #fff;
+    width: 160px;
+    padding: 10px;
+    font-size: 12px;
+    box-shadow: 2px 2px 2px #fff;
+    border-radius: 8px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -20px;
+    border-top: 2px solid rgb(0, 100, 0, 0.5);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-menu-1:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    margin: 3px 0;
+}
+
+.btn {
+    color: whitesmoke;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: rgb(0, 200, 0, 0.5);
+}
+
+.container-primary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.para-header {
+    color: #3A3B3C;
+    margin-top: 2%;
+}
+
+.container-secondary {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20%;
+}
+
+.container-secondary div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+    padding: 10%;
+}
+
+.container-secondary img {
+    margin-top: 25%;
+}
+
+.container-secondary div h4 {
+    margin-bottom: 20%;
+    margin-top: 5%;
+}
+
+.grid-item-1 {
+    background-color: #1eb9aa;
+}
+
+.grid-item-2 {
+    background-color: #5dbb63;
+}
+
+.grid-item-3 {
+    background-color: #ee9f27;
+}
+
+.grid-item-4 {
+    background-color: #e85c81;
+}
+
+.grid-item-1:hover img {
+    transform: scale(1.2);
+}
+
+.grid-item-2:hover img {
+    transform: scale(1.2);
+}
+
+.grid-item-3:hover img {
+    transform: scale(1.2);
+}
+
+.grid-item-4:hover img {
+    transform: scale(1.2);
+}
+
+.container-contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right,.left{
+    margin: 10% 20%;
+}
+
+.container-contact span {
+    font-size: large;
+    color: #696006;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.container-contact p{
+    color: #464646;
+}
+
+.container-contact input{
+    background-color: #ffffe0;
+    width: 100%;
+    margin-top: 10px ;
+    padding: 20px 20px;
+    border-style: none;
+    border-radius: 1em;
+    outline: none; 
+}
+
+@media (max-width: 900px) {
+
+
+    .container {
+        grid-template-areas:
+            'head head head head head'
+            'menu  menu menu menu menu'
+            'main main main main main'
+            'right right right right right'
+            'foot foot foot foot foot';
+
+    }
+}
+
